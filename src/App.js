@@ -1,4 +1,3 @@
-// @ts-nocheck
 const Pet = (props) =>
   React.createElement("div", {}, [
     React.createElement("h1", {}, props.name),
