@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Adopt me</title>
 </head>
 <body>
     <div id="root">Not rendered</div>
     <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+    <script>
+        const App = () => {
+            return React.createElement("div", {id:"test"}, React.createElement("h1", {}, "Adopt me!"))
+        }
+        const container = document.getElementById("root")
+        const root = ReactDOM.createRoot(container)
+        root.render(React.createElement(App))
+    </script>
 </body>
 </html>
